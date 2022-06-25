@@ -1,0 +1,61 @@
+.Project{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding-right: 4rem;
+    margin-bottom: 10rem;
+    z-index: 1;
+}
+.Project_Reversed{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+
+
+.ProjectImage{
+    width: 60%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 1rem;
+}
+.ProjectTitle{
+    position: relative;
+    top: 2rem;
+    color: var(--color-primary);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.ProjectTextCard{
+    bottom: -20%;
+    right: 15%;
+    width: 40%;
+    background: var(--color-background-secondary);
+    position: absolute;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    z-index: 1;
+}
+.ProjectTextCard_Reversed{
+    left: 0%;
+}
+
+.ProjectText{
+    margin: 0;
+    color: var(--color-text);
+}
+
+.ProjectAtributes{
+    padding-top: 1rem;
+    display:flex;
+    justify-content: space-around; 
+}
+.Attribute{
+    color: var(--color-primary);
+    margin:0;
+}

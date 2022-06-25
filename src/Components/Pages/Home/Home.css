@@ -1,0 +1,109 @@
+.Home{
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 10vw;
+}
+
+.HomeText{
+    color: var(--color-text);
+}
+
+.arrow_down{
+    width:3rem;
+    height:3rem;
+    position:absolute;
+    left:50%;
+    bottom:2rem;
+    transform: translate(-50%,-50%);
+    cursor:pointer;
+    transition: 0.5s;
+}
+.arrow_down:hover{
+    bottom: 1rem;
+}
+
+.HomeLandingScreen{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.TitleLandingScreen{
+    color: var(--color-primary);
+    font-size: 4rem;
+    font-weight: 300;
+    padding-top: 5rem;
+    margin: 0;
+}
+.TextLandingScreen{
+    padding-bottom: 2rem;
+}
+
+
+.HomeProjectsSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 0;
+}
+
+.HomeAboutSection{
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.HomeAboutContect{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.HomeAboutText{
+    padding-right: 6rem;
+    text-align: start;
+}
+
+.HomeContactSection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-top: 5rem;
+    color: var(--color-text);
+}
+.HomeContactText{
+    padding-bottom: 2rem;
+    text-align: left;
+    width: 40%;
+}
+.ImageContainer{
+    border: 3px solid transparent;
+    transition: 1s;
+}
+
+.ImageContainer:hover{
+    border: 3px solid var(--color-primary);
+}
+
+.Image{
+    position: relative;
+    transition: 1s;
+    top: 0;
+    left: 0;
+}
+.Image:hover{
+    position: relative;
+    top: -1rem;
+    left: -1rem;
+}

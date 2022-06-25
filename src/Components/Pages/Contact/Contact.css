@@ -1,0 +1,44 @@
+.Contact{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10vw;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.SocialMedia_Bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3rem;
+}
+
+.SocialMedia_Icon{
+    margin: 2rem 0;
+    height:3rem;
+    width: 3rem;
+}
+.ContactForm{
+    width: 50vw;
+    padding-left:4rem;
+}
+.ContactForm h2{
+    margin: 0;
+}
+.ContactForm .Text{
+    color:var(--color-text);
+    margin-bottom:2rem;
+}
+
+.TopContact{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:2rem;
+}
+
+.SubmitButton{
+    width:fit-content;
+}

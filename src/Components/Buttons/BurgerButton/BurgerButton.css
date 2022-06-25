@@ -1,0 +1,28 @@
+.BurgerButton{
+    width: 2rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    z-index: 100;
+}
+.ClosedBurgerButton .burger_line1{
+    transform: rotate(-45deg) translate(-10px,10px);
+}
+
+.ClosedBurgerButton .burger_line2{
+    opacity: 0;
+}
+
+.ClosedBurgerButton .burger_line3{
+    transform: rotate(45deg) translate(-6px,-6px);
+}
+
+.burger_line{
+    width: 100%;
+    height: 2px;
+    background: var(--color-text);
+    transition: 1S;
+}

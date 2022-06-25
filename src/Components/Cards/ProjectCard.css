@@ -1,0 +1,61 @@
+.ProjectCard{
+    position: relative;
+    height:13rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.ProjectCardBackground{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.ProjectCardOverlay{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 25, 47,0.6);
+    transition:0.5s;
+}
+
+.ProjectCard:hover .ProjectCardOverlay{
+    background-color: rgba(100, 255, 219,0.8);
+}
+
+.ProjectCardTitle{
+    position:absolute;
+    bottom: 1rem;
+    left: 2rem;
+    margin:0;
+    z-index: 1;
+    color:var(--color-primary);
+    font-size: 2rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.ProjectCard:hover .ProjectCardTitle{
+    color:var(--color-background-primary);
+    bottom: 3rem;
+}
+
+.ProjectCardLinkIcon{
+    position:absolute;
+    bottom: -2rem;
+    left: 2rem;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.ProjectCard:hover .ProjectCardLinkIcon{
+    bottom: 1rem;
+    opacity: 1;
+}

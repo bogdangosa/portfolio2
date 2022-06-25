@@ -1,0 +1,24 @@
+.Header{
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    z-index:100;
+}
+.Logo{
+    color: var(--color-text);
+}
+
+.Header {
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .Header {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}

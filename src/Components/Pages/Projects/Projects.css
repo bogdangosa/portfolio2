@@ -1,0 +1,14 @@
+.Projects{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10vw;
+    padding-top: 5rem;
+}
+
+.ProjectCardsContainer{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem;
+    padding-bottom:2rem;
+}

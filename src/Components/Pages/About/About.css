@@ -1,0 +1,18 @@
+.About{
+    width: 85%;
+    box-sizing: border-box;
+    padding-left: 10vw;
+    padding-top: 5rem;
+    padding-bottom:3rem;
+}
+.AboutTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.AboutText{
+    padding-right: 6rem;
+    text-align: start;
+    color: var(--color-text);
+}

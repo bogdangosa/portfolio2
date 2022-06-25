@@ -1,0 +1,28 @@
+.Navigation{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.NavLinkCard{
+    position: relative;
+    z-index: 100!important;
+    width: 100%;
+    height: 100%;
+    background: var(--color-background-secondary);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NavLinkCardText{
+    font-size: 3rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-primary);
+}
