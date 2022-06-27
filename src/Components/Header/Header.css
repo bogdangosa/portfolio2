@@ -7,6 +7,7 @@
     align-items: center;
     padding: 1rem 5%;
     z-index:100;
+    background: var(--color-background-primary);
 }
 .Logo{
     color: var(--color-text);

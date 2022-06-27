@@ -14,6 +14,10 @@
     margin: 0 auto;
   }
 }
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Space Mono', monospace; 
@@ -24,6 +28,15 @@ body {
   overflow-x: hidden;
 }
 
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+p{
+  font-size: 1rem;
+  margin: 0;
+}
 
 ::-webkit-scrollbar {
   width: 0;
