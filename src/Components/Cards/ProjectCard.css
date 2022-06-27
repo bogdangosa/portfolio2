@@ -47,15 +47,21 @@
     bottom: 3rem;
 }
 
-.ProjectCardLinkIcon{
+.ProjectCardLinks{
     position:absolute;
     bottom: -2rem;
     left: 2rem;
     transition: 0.5s;
     opacity: 0;
+    display: flex;
+}
+.ProjectCardLinkIcon{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
 }
 
-.ProjectCard:hover .ProjectCardLinkIcon{
+.ProjectCard:hover .ProjectCardLinks{
     bottom: 1rem;
     opacity: 1;
 }

@@ -6,15 +6,16 @@ const Projects = ()=> {
     <div className="Projects">
       <h2>Projects</h2>
       <div className="ProjectCardsContainer">
-        <ProjectCard image_background="/project_images/space_page.png" title="Space Page"/>
-        <ProjectCard image_background="/project_images/weather_app.png" title="Weather App"/>
-        <ProjectCard image_background="/project_images/shortly_url.png" title="Shortly Url"/>
-        <ProjectCard image_background="/project_images/image_galery.png" title="Image Galery"/>
-        <ProjectCard image_background="/project_images/thinkup_platform.png" title="ThinkUp Platform"/>
-        <ProjectCard image_background="/project_images/micsunel.png" title="Micsunel"/>
-        <ProjectCard image_background="/project_images/blogr.png" title="Blogr"/>
-        <ProjectCard image_background="/project_images/green_house.png" title="Green House"/>
-        <ProjectCard image_background="/project_images/sunny_agency.png" title="Sunny Agency"/>
+        
+        <ProjectCard image_background="/project_images/thinkup_platform.png" title="ThinkUp Platform" link="none" github="none"/>
+        <ProjectCard image_background="/project_images/space_page.png" title="Space Page" link="https://pedantic-nightingale-faa67d.netlify.app" github="https://github.com/bogdangosa/SpacePage"/>
+        <ProjectCard image_background="/project_images/weather_app.png" title="Weather App" link="https://reverent-mestorf-315e24.netlify.app" github="https://github.com/bogdangosa/WeatherApp"/>
+        <ProjectCard image_background="/project_images/shortly_url.png" title="Shortly Url" link="https://bogdangosa.github.io/Shortly-URL" github="https://github.com/bogdangosa/Shortly-URL "/>
+        <ProjectCard image_background="/project_images/image_galery.png" title="Image Galery" link="https://image-galery.vercel.app/" github="https://github.com/bogdangosa/ImageGalery"/>
+        <ProjectCard image_background="/project_images/micsunel.png" title="Micsunel" link="https://bogdangosa.github.io/MicsunelPortofolio" github="https://github.com/bogdangosa/MicsunelPortofolio"/>
+        <ProjectCard image_background="/project_images/blogr.png" title="Blogr" link="https://bogdangosa.github.io/Blogr-landing-page" github="https://github.com/bogdangosa/Blogr-landing-page"/>
+        <ProjectCard image_background="/project_images/green_house.png" title="Green House" link="https://bogdangosa.github.io/GreenHouse" github="https://github.com/bogdangosa/GreenHouse"/>
+        <ProjectCard image_background="/project_images/sunny_agency.png" title="Sunny Agency" link="https://bogdangosa.github.io/Sunny-agenty-landing-page" github="https://github.com/bogdangosa/Sunny-agenty-landing-page "/>
       </div>
 
     </div>
