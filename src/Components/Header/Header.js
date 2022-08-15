@@ -12,8 +12,8 @@ const Header = ()=> {
         <h1 className="Logo">BG</h1>
         <BurgerButton menuState={MenuState} updateMenu={()=>setMenuState(!MenuState)}/>
         
-        <AnimatePresence exitBeforeEnter initial={false}>
-          {MenuState?<></>:<Navigation data_links={new Array({name:"Home",link:"/"},{name:"Projects",link:"/Projects"},{name:"About Me",link:"/About"},{name:"Contact",link:"/Contact"})} closeMenu={()=>setMenuState(true)}/>}
+        <AnimatePresence exitBeforeEnter={true}>
+          {!MenuState && (<Navigation data_links={new Array({name:"Home",link:"/"},{name:"Projects",link:"/Projects"},{name:"About Me",link:"/About"},{name:"Contact",link:"/Contact"})} closeMenu={()=>setMenuState(true)}/>)}
         </AnimatePresence>
     </div>
   );

@@ -5,6 +5,7 @@ import './Home.css';
 import { useNavigate  } from "react-router-dom";
 import { openInNewTab } from '../../../utils/utils';
 import {AnimatePresence ,motion} from 'framer-motion'
+import HomeProjectCard from '../../Project/HomeProjectCard';
 
 const Home = ()=> {
     const navigate = useNavigate();
@@ -70,11 +71,17 @@ const Home = ()=> {
         </div>
         <div className="HomeProjectsSection">
             <h2 ref={ProjectsTitleRef}>Projects</h2>
+            <HomeProjectCard attributes={new Array("React","Framer Motion","Neflify","React-Router","CSS")} onClick={()=>openInNewTab("https://pedantic-nightingale-faa67d.netlify.app")} reversed={false} image="/project_images/space_page.png" title="Space Page">This is a project about a fictional space page. The design and idea is from frontend-mentor. I used React JS to build this, adding some cool animations using Framer-Motion. This was a very good learning project.</HomeProjectCard>
+            <HomeProjectCard attributes={new Array("React","Weather API","Neflify","CSS")} onClick={()=>openInNewTab("https://reverent-mestorf-315e24.netlify.app")} reversed={true} image="/project_images/weather_app.png" title="Weather App">           I created a website that displays the data from OpenWeather API,thus you can see the weather from your location, it even shows it from 3 to 3 hours. In this project I learnt React JS and working with an API.</HomeProjectCard>
+            <HomeProjectCard attributes={new Array("Next Js","AWS","Auth0","Flask")} onClick={()=>{}} reversed={false} image="/project_images/thinkup_platform.png" title="ThinkUp Platform">           Me and a team of very talented students developed a platoform for Think-Up Academy.This project includes authentication, working with and creating an API and a lot of teamwork. While beeing only 2 people on the front-end i did the vast majority of the interface.</HomeProjectCard>
+            <HomeProjectCard attributes={new Array("Next Js","Pexels API","Vercel","CSS")} onClick={()=>openInNewTab("https://image-galery.vercel.app/")} reversed={true} image="/project_images/image_galery.png" title="Image Galery">Morbi congue molestie cursus. Duis in auctor felis, sed facilisis mi. Mauris enim enim, tincidunt eget varius in, pellentesque et dolor. Pellentesque laoreet lacus sit amet sapien consectetur fermentum.</HomeProjectCard>
+
+            
             <Project attributes={new Array("React","Framer Motion","Neflify","React-Router","CSS")} onClick={()=>openInNewTab("https://pedantic-nightingale-faa67d.netlify.app")} reversed={false} image="/project_images/space_page.png" title="Space Page">This is a project about a fictional space page. The design and idea is from frontend-mentor. I used React JS to build this, adding some cool animations using Framer-Motion. This was a very good learning project.</Project>
             <Project attributes={new Array("React","Weather API","Neflify","CSS")} onClick={()=>openInNewTab("https://reverent-mestorf-315e24.netlify.app")} reversed={true} image="/project_images/weather_app.png" title="Weather App">           I created a website that displays the data from OpenWeather API,thus you can see the weather from your location, it even shows it from 3 to 3 hours. In this project I learnt React JS and working with an API.</Project>
             <Project attributes={new Array("Next Js","AWS","Auth0","Flask")} onClick={()=>{}} reversed={false} image="/project_images/thinkup_platform.png" title="ThinkUp Platform">           Me and a team of very talented students developed a platoform for Think-Up Academy.This project includes authentication, working with and creating an API and a lot of teamwork. While beeing only 2 people on the front-end i did the vast majority of the interface.</Project>
             <Project attributes={new Array("Next Js","Pexels API","Vercel","CSS")} onClick={()=>openInNewTab("https://image-galery.vercel.app/")} reversed={true} image="/project_images/image_galery.png" title="Image Galery">Morbi congue molestie cursus. Duis in auctor felis, sed facilisis mi. Mauris enim enim, tincidunt eget varius in, pellentesque et dolor. Pellentesque laoreet lacus sit amet sapien consectetur fermentum.</Project>
-            
+
         </div>
         <div className="HomeAboutSection">
             <h2>About Me</h2>

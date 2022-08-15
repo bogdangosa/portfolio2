@@ -16,3 +16,19 @@
     text-align: start;
     color: var(--color-text);
 }
+
+
+
+@media screen and (max-width: 1000px) {
+    .About{
+        width: 85%;
+    }
+    .AboutTop{
+        flex-direction: column;
+    }
+    
+    .AboutText{
+        padding-right: 0;
+        padding-bottom: 3rem;
+    }
+}

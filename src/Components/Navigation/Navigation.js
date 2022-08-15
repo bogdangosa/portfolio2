@@ -6,7 +6,7 @@ const Navigation = (props)=> {
   return (
     <div className="Navigation">
           {props.data_links.map((linkdata,index)=>{
-            return <NavLinkCard delay={0.5*index} key={index} link={linkdata.link} onClick={()=>props.closeMenu()}>{linkdata.name}</NavLinkCard>
+            return <NavLinkCard delay={0.3*index} key={index} link={linkdata.link} onClick={()=>props.closeMenu()}>{linkdata.name}</NavLinkCard>
           })}
     </div>
   );
@@ -26,7 +26,7 @@ const NavLinkCard = (props)=>{
   const Transition = {
       type: "tween",
       ease: "anticipate",
-      duration: 1.5,
+      duration: 0.4,
       delay: props.delay
   }
 

@@ -19,11 +19,11 @@ const Contact = ()=> {
   return (
     <div className="Contact">
       <div className='SocialMedia_Bar'>
-          <img src="/social_media/github-icon-fill.svg" alt="...." className='SocialMedia_Icon'/>
+          <a href="https://github.com/bogdangosa" target="_blank"><img src="/social_media/github-icon-fill.svg" alt="...." className='SocialMedia_Icon'/></a>
           
-          <img src="/social_media/instagram-icon.svg" alt="...." className='SocialMedia_Icon'/>
+          <a href="https://www.instagram.com/bogdan_gosa/" target="_blank"><img src="/social_media/instagram-icon.svg" alt="...." className='SocialMedia_Icon'/></a>
           
-          <img src="/social_media/linkedin-icon.svg" alt="...." className='SocialMedia_Icon'/>
+          <a href="https://www.linkedin.com/in/bogdan-gosa-5bb97a224/" target="_blank"><img src="/social_media/linkedin-icon.svg" alt="...." className='SocialMedia_Icon'/></a>
           
           <img src="/social_media/facebook-icon.svg" alt="...." className='SocialMedia_Icon'/>
       </div>
