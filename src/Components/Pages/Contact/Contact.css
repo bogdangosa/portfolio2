@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding-left: 10vw;
     padding-top: 8rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: flex-start;
 }
@@ -40,5 +41,27 @@
 }
 
 .SubmitButton{
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
     width:fit-content;
+}
+
+
+@media screen and (max-width: 700px) {
+    .Contact{
+        flex-direction: column-reverse;
+        padding-right: 10vw;
+    }
+    .ContactForm{
+        width: 100%;
+        padding-left: 0;
+
+    }
+
+
+    .SocialMedia_Bar{
+        flex-direction: row;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
 }

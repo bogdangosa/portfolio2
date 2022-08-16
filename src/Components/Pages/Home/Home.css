@@ -75,7 +75,7 @@
 }
 
 .HomeContactSection{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -123,8 +123,21 @@
         text-align: center;
     }
 
-    /*.HomeProjectsSection,*/ .HomeAboutSection{
+    /*.HomeProjectsSection,.HomeAboutSection{
         display: none;
+    }*/
+    .HomeAboutSection{
+        min-height: 100vh;
+        height: auto;
+    }
+    
+    .HomeAboutContect{
+        flex-direction: column;
+    }
+    .HomeAboutText{
+        padding-right: 0;
+        font-size: 0.8rem;
+        padding-bottom: 2rem;
     }
 
     
