@@ -86,9 +86,13 @@ const Home = ()=> {
         <div className="HomeAboutSection">
             <h2>About Me</h2>
             <div className="HomeAboutContect">
-                <p className="HomeText HomeAboutText">Hi! I’m Bogdan Gosa and I am a passionate and enthusiastic Front-end Developer with 2+ years of experience in web development. I am a very hard working individual, and I would also consider myself a good team member.<br/><br/>My story with programming starts from a very young age. My first contact with programming was at school at age 10 when I had a class of programming. I was doing pretty good so my teacher sent me to an excellency class. At age 11 I already got to the national olympiad. At age 14 I got a bronze medal at the national olympiad. Then I started High School, in witch I started OOP, while also being in the robotics team. I tried almost every type of programming, from building small games to app development to programming robots. But after a while I started learning web development and I knew this is what I liked the most, so I started learning. I worked hard to develop my skills and I built some cool projects along the way.</p>
+                <p className="HomeText HomeAboutText">
+                    Hi! I’m Bogdan Gosa and I am a passionate and enthusiastic Front-end Developer.
+                    <br/><br/> I am a consistent learner, seeing every day as an opportunity to learn something new. I also put high emphasis on clean code, so you can expect a well written code source.
+                    <br/><br/>I'm interested in working with amazing people on their ambitious projects.
+                </p>
                 <div className="ImageContainer">
-                    <img className="Image" src="/profile_image.png"/>
+                    <img className="Image" src="/profile_image_me.png"/>
                 </div>
             </div>
         </div>

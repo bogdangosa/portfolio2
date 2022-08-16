@@ -12,8 +12,8 @@ const HomeProjectCard = ({className,image,title,children,reversed,onClick,attrib
             <h2 className="HomeProjectCardTitle">{title}</h2>
             <p className="ProjectText"> {children}</p>
             <div className="ProjectAtributes">
-                {attributes.map((attribute)=>{
-                  return <p className="Attribute">{attribute}</p>
+                {attributes.map((attribute,index)=>{
+                  return <p className="Attribute" key={index}>{attribute}</p>
                 })
                 }
             </div>

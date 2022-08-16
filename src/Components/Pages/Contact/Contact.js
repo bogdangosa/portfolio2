@@ -3,12 +3,13 @@ import './Contact.css';
 import Input from '../../FormElements/Input';
 import TextArea from '../../FormElements/TextArea';
 import SimpleButton from '../../Buttons/SimpleButton/SimpleButton';
+import emailjs from 'emailjs-com'
 
 const Contact = ()=> {
-  const [FullName,setFullName] = useState(null);
-  const [Email,setEmail] = useState(null);
-  const [Title,setTitle] = useState(null);
-  const [Message,setMessage] = useState(null);
+  const [FullName,setFullName] = useState("");
+  const [Email,setEmail] = useState("");
+  const [Title,setTitle] = useState('');
+  const [Message,setMessage] = useState('');
 
   const SubmitForm = () =>{
 

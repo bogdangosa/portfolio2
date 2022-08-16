@@ -7,8 +7,8 @@ const Projects = ()=> {
       <h2>Projects</h2>
       <div className="ProjectCardsContainer">
         
-        <ProjectCard image_background="/project_images/sindu.png" title="Sindu Page" link="https://sindhusaraswathybhaskaran.com/index.html"/>
-        <ProjectCard image_background="/project_images/gwei.png" title="Gwei Club" link="https://www.gweiclub.xyz/"/>
+        <ProjectCard image_background="/project_images/sindu.png" title="Unmeelana" link="https://sindhusaraswathybhaskaran.com/index.html" github="none"/>
+        <ProjectCard image_background="/project_images/gwei.png" title="Gwei Club" link="https://www.gweiclub.xyz/" github="none"/>
         <ProjectCard image_background="/project_images/thinkup_platform.png" title="ThinkUp Platform" link="none" github="none"/>
         <ProjectCard image_background="/project_images/space_page.png" title="Space Page" link="https://pedantic-nightingale-faa67d.netlify.app" github="https://github.com/bogdangosa/SpacePage"/>
         <ProjectCard image_background="/project_images/weather_app.png" title="Weather App" link="https://reverent-mestorf-315e24.netlify.app" github="https://github.com/bogdangosa/WeatherApp"/>

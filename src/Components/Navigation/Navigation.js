@@ -32,7 +32,6 @@ const NavLinkCard = (props)=>{
 
   return (
     <motion.div className="NavLinkCard"
-    key={props.key}
     initial="out"
     animate="in"
     exit="out"
