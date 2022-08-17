@@ -14,10 +14,10 @@
     justify-content: center;
     align-items: flex-start;
     padding-top: 3rem;
+    gap: 3rem;
 }
 
 .SocialMedia_Icon{
-    margin: 2rem 0;
     height:3rem;
     width: 3rem;
 }
