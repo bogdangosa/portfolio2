@@ -26,7 +26,7 @@ const NavLinkCard = (props)=>{
   const Transition = {
       type: "tween",
       ease: "anticipate",
-      duration: 0.4,
+      duration: 0.3,
       delay: props.delay
   }
 

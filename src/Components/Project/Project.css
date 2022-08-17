@@ -6,6 +6,7 @@
     padding-right: 4rem;
     margin-bottom: 10rem;
     z-index: 1;
+    cursor: pointer;
 }
 .Project_Reversed{
     display: flex;
@@ -71,6 +72,7 @@
 
 .ProjectText{
     margin: 0;
+    font-size: 0.8rem;
     color: var(--color-text);
 }
 
