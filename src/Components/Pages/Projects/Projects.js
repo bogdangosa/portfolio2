@@ -6,8 +6,12 @@ const Projects = ()=> {
     <div className="Projects">
       <h2>Projects</h2>
       <div className="ProjectCardsContainer">
-        
+        <ProjectCard image_background="/project_images/cope.jpg" title="Let's Cope" link="https://sindhusaraswathybhaskaran.com/index.html" github="none"/>
+        <ProjectCard image_background="/project_images/airport.jpg" title="Airport Local Taxis" link="https://www.gweiclub.xyz/" github="none"/>
+        <ProjectCard image_background="/project_images/bambook.jpg" title="Bambook" link="none" github="none"/>
+        <ProjectCard image_background="/project_images/calmdeer.jpg" title="Calm Deer" link="https://rad-kashata-baf296.netlify.app/" github="https://github.com/bogdangosa/CalmDeer"/> 
         <ProjectCard image_background="/project_images/sindu.png" title="Unmeelana" link="https://sindhusaraswathybhaskaran.com/index.html" github="none"/>
+        <ProjectCard image_background="/project_images/denta_health.jpg" title="Denta Health" link="https://idyllic-brioche-74f79d.netlify.app/" github="https://github.com/bogdangosa/Denta-Health"/>
         <ProjectCard image_background="/project_images/gwei.png" title="Gwei Club" link="https://www.gweiclub.xyz/" github="none"/>
         <ProjectCard image_background="/project_images/thinkup_platform.png" title="ThinkUp Platform" link="none" github="none"/>
         <ProjectCard image_background="/project_images/space_page.png" title="Space Page" link="https://pedantic-nightingale-faa67d.netlify.app" github="https://github.com/bogdangosa/SpacePage"/>
