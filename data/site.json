@@ -1,0 +1,29 @@
+{
+  "name": "Bogdan Gosa",
+  "email": "bogdan.gosa@gmail.com",
+  "roles": [
+    "AI Developer",
+    "Business Automation",
+    "Document Intelligence",
+    "Hackathon Winner",
+    "Cloud"
+  ],
+  "statement": "I build AI that automates the work businesses still do by hand.",
+  "bootLines": [
+    "> whoami",
+    "bogdan_gosa",
+    "> ls ./passions",
+    "ai/  boardgames/  games/  hackathons/",
+    "> launch portfolio --purple"
+  ],
+  "socials": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/bogdangosa"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/bogdan-gosa-5bb97a224/"
+    }
+  ]
+}

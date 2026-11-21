@@ -1,0 +1,34 @@
+[
+  {
+    "hash": "a91f3c2",
+    "date": "Jul 2025 \u2013 now",
+    "title": "AI Developer",
+    "org": "Planet Group Int.",
+    "msg": "feat: GenAI automation for a major Romanian bank",
+    "detail": "Built a low-code Intelligent Document Processing platform for configuring new document-automation scenarios. Integrated Arize Phoenix for LLM traceability and evaluation, and Celery for task management."
+  },
+  {
+    "hash": "7be02d1",
+    "date": "Jul \u2013 Sep 2025",
+    "title": "AI Development Intern",
+    "org": "Planet Group Int.",
+    "msg": "poc: classify millions of archived bank documents",
+    "detail": "HDBSCAN for initial clustering and dataset creation, then an ensemble of 3 classification models to label the archive."
+  },
+  {
+    "hash": "3c9d8e5",
+    "date": "Aug 2023 \u2013 Mar 2025",
+    "title": "Frontend Developer",
+    "org": "Let's Cope",
+    "msg": "feat: mental-health platform (web + mobile)",
+    "detail": "React JS platform with videos and programs, React Native mobile app, SimplyMeet API for weekly coaching sessions and Stripe for payments."
+  },
+  {
+    "hash": "1f00aa7",
+    "date": "Jan 2022 \u2013 Jan 2023",
+    "title": "Frontend Developer & Designer",
+    "org": "ThinkUp Academy (NGO)",
+    "msg": "feat: mentor/student platform + Figma design",
+    "detail": "Designed the site in Figma and built the platform in Next.js with Auth0, where mentors guide students and host their projects."
+  }
+]

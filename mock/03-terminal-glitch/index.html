@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bogdan Gosa — MOCK</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>:root{--bg0:#121214;--bg1:#1a1a1f;--bg2:#232329;--tx:#ededf2;--mut:#9a9aa8;--ac:#8b5cf6;--glow:#a78bfa;--deep:#5b21b6}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{background:var(--bg0);color:var(--tx);font-family:"Space Grotesk",sans-serif;overflow-x:hidden}
+.mono{font-family:"Space Mono",monospace}section{min-height:100vh;padding:12vh 6vw;position:relative}
+h1,h2{font-size:clamp(3rem,13vw,13rem);line-height:.9;letter-spacing:-.04em;text-transform:uppercase}h2{font-size:clamp(2.5rem,9vw,8rem)}
+.ac{color:var(--ac)}.card{background:var(--bg1);border:1px solid var(--bg2);padding:2rem;border-radius:14px}
+nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:1.2rem 6vw;z-index:10;mix-blend-mode:difference;font-family:"Space Mono"}
+a{color:inherit}.grain{pointer-events:none;position:fixed;inset:0;opacity:.06;z-index:9;background:repeating-conic-gradient(#fff 0 25%,#000 0 50%) 0 0/3px 3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+#boot{position:fixed;inset:0;background:#000;z-index:20;padding:6vw;color:var(--glow);font-size:1.3rem}
+.glitch{position:relative}.glitch:hover::before,.glitch:hover::after{content:attr(data-t);position:absolute;left:0;top:0}.glitch:hover::before{color:#0ff;transform:translate(-4px,0);mix-blend-mode:screen}.glitch:hover::after{color:var(--ac);transform:translate(4px,0);mix-blend-mode:screen}
+.marq{overflow:hidden;white-space:nowrap;border-block:1px solid var(--bg2);padding:1rem 0;font-size:3rem;text-transform:uppercase}.marq div{display:inline-block}
+.wipe{background:var(--ac);color:#000;clip-path:inset(0 0 100% 0)}
+.row{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--bg2);padding:1.5rem 0;font-size:clamp(1.6rem,5vw,4rem);cursor:pointer;transition:.3s}.row:hover{color:var(--ac);padding-left:2rem}
+#float{position:fixed;width:260px;height:170px;background:var(--bg2) center/cover;border:2px solid var(--ac);pointer-events:none;z-index:8;opacity:0;transform:translate(-50%,-50%)}
+.log p{margin:.8rem 0;opacity:.15}.log b{color:var(--ac)}
+</style></head><body><div class="grain"></div><div id="boot" class="mono"></div><div id="float"></div>
+<nav><b>BG/03 TERMINAL</b><span>about · work · projects</span></nav>
+<section style="padding-top:20vh"><h1 class="glitch" data-t="BOGDAN GOSA">Bogdan<br>Gosa</h1></section>
+<div class="marq mono"><div id="m1">AI DEVELOPER ✦ FRONTEND ✦ HACKATHON WINNER ✦ BOARD GAME NERD ✦ AI DEVELOPER ✦ FRONTEND ✦ HACKATHON WINNER ✦ BOARD GAME NERD ✦</div></div>
+<section class="wipe" id="about"><h2>I teach machines to <br>play, read &amp; ship.</h2></section>
+<section><h2>git log</h2><div class="log mono">
+<p><b>a91f3c2</b> Jul 2025 — AI Developer @ Planet Group</p><p><b>7be02d1</b> Jul 2025 — AI Intern: HDBSCAN + ensemble</p><p><b>3c9d8e5</b> Aug 2023 — Frontend @ Let's Cope</p><p><b>1f00aa7</b> Jan 2022 — Frontend + Figma @ ThinkUp</p></div></section>
+<section><h2>Projects</h2><div id="list"></div></section>
+<section><h2>Let's <span class="ac">talk</span></h2><a class="mono" style="font-size:clamp(1.4rem,5vw,4rem)" href="mailto:bogdan.gosa@gmail.com">bogdan.gosa@gmail.com ↗</a></section>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+// boot
+const b=document.getElementById('boot'),lines=['> whoami','bogdan_gosa','> ls ./passions','ai/  boardgames/  games/  hackathons/','> launch portfolio --purple'];let li=0,ci=0;
+(function t(){if(li>=lines.length){gsap.to(b,{clipPath:'inset(0 0 100% 0)',duration:.8,delay:.4,onComplete:()=>b.remove()});return}
+const L=lines[li];b.innerHTML=lines.slice(0,li).join('<br>')+'<br>'+L.slice(0,ci);ci++;if(ci>L.length){li++;ci=0;setTimeout(t,250)}else setTimeout(t,28)})();
+// wipe reveal
+gsap.to('#about',{clipPath:'inset(0 0 0% 0)',ease:'none',scrollTrigger:{trigger:'#about',start:'top 90%',end:'top 20%',scrub:true}});
+// marquee follows scroll velocity
+let x=0,dir=1;const m=document.getElementById('m1');
+ScrollTrigger.create({onUpdate:s=>{dir=s.direction}});
+gsap.ticker.add(()=>{x-=dir*(1+Math.abs(ScrollTrigger.getAll()[0]?.getVelocity?.()||0)/300);if(x<-m.scrollWidth/2)x=0;m.style.transform='translateX('+x+'px)'});
+// log
+gsap.utils.toArray('.log p').forEach(p=>gsap.to(p,{opacity:1,scrollTrigger:{trigger:p,start:'top 85%',end:'top 60%',scrub:true}}));
+// projects list with hover image
+const P=['RL on Boardgames','Mills AI','EduLearn','Boardgame Reviews',"Let's Cope",'ThinkUp Platform'],l=document.getElementById('list'),f=document.getElementById('float');
+P.forEach((p,i)=>l.insertAdjacentHTML('beforeend','<div class="row glitch" data-t="'+p+'"><span>'+p+'</span><span class="mono ac">0'+(i+1)+'</span></div>'));
+l.addEventListener('mouseover',e=>e.target.closest('.row')&&gsap.to(f,{opacity:1,duration:.2}));l.addEventListener('mouseout',()=>gsap.to(f,{opacity:0,duration:.2}));
+addEventListener('mousemove',e=>gsap.to(f,{left:e.clientX,top:e.clientY,duration:.4}));
+</script></body></html>

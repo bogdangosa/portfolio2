@@ -1,0 +1,111 @@
+[
+  {
+    "slug": "rl-calico",
+    "title": "RL on Boardgames",
+    "tagline": "Agents that learn to play Calico",
+    "category": "ai",
+    "year": 2026,
+    "featured": true,
+    "stack": [
+      "PyTorch",
+      "DQN",
+      "MCTS",
+      "Godot"
+    ],
+    "cover": "/projects/rl-calico.svg",
+    "links": {
+      "github": "https://github.com/bogdangosa",
+      "demo": null
+    }
+  },
+  {
+    "slug": "mills-ai",
+    "title": "Mills AI",
+    "tagline": "Nine Men's Morris with a Minimax opponent",
+    "category": "game",
+    "year": 2025,
+    "featured": true,
+    "stack": [
+      "Python",
+      "FastAPI",
+      "React"
+    ],
+    "cover": "/projects/mills-ai.svg",
+    "links": {
+      "github": "https://github.com/bogdangosa/MillsBackEnd",
+      "demo": null
+    }
+  },
+  {
+    "slug": "edulearn",
+    "title": "EduLearn",
+    "tagline": "Playful learning app for kids with disabilities",
+    "category": "mobile",
+    "year": 2023,
+    "featured": true,
+    "stack": [
+      "React Native",
+      "Expo",
+      "SQLite"
+    ],
+    "cover": "/projects/edulearn.svg",
+    "links": {
+      "github": "https://github.com/bogdangosa/JocCopiiScoala",
+      "demo": null
+    }
+  },
+  {
+    "slug": "boardgame-reviews",
+    "title": "Boardgame Reviews",
+    "tagline": "CRUD platform with live websocket graphs",
+    "category": "web",
+    "year": 2025,
+    "featured": true,
+    "stack": [
+      "Nuxt",
+      "ASP.NET",
+      "EF"
+    ],
+    "cover": "/projects/boardgame-reviews.svg",
+    "links": {
+      "github": null,
+      "demo": null
+    }
+  },
+  {
+    "slug": "lets-cope",
+    "title": "Let's Cope",
+    "tagline": "Mental-health video & coaching platform",
+    "category": "web",
+    "year": 2024,
+    "featured": true,
+    "stack": [
+      "React",
+      "React Native",
+      "Stripe"
+    ],
+    "cover": "/projects/lets-cope.svg",
+    "links": {
+      "github": null,
+      "demo": null
+    }
+  },
+  {
+    "slug": "thinkup",
+    "title": "ThinkUp Platform",
+    "tagline": "Mentor & student platform for an NGO",
+    "category": "web",
+    "year": 2022,
+    "featured": true,
+    "stack": [
+      "Next.js",
+      "Auth0",
+      "AWS"
+    ],
+    "cover": "/projects/thinkup.svg",
+    "links": {
+      "github": null,
+      "demo": null
+    }
+  }
+]

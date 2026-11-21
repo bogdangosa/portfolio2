@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bogdan Gosa — MOCK</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>:root{--bg0:#121214;--bg1:#1a1a1f;--bg2:#232329;--tx:#ededf2;--mut:#9a9aa8;--ac:#8b5cf6;--glow:#a78bfa;--deep:#5b21b6}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{background:var(--bg0);color:var(--tx);font-family:"Space Grotesk",sans-serif;overflow-x:hidden}
+.mono{font-family:"Space Mono",monospace}section{min-height:100vh;padding:12vh 6vw;position:relative}
+h1,h2{font-size:clamp(3rem,13vw,13rem);line-height:.9;letter-spacing:-.04em;text-transform:uppercase}h2{font-size:clamp(2.5rem,9vw,8rem)}
+.ac{color:var(--ac)}.card{background:var(--bg1);border:1px solid var(--bg2);padding:2rem;border-radius:14px}
+nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:1.2rem 6vw;z-index:10;mix-blend-mode:difference;font-family:"Space Mono"}
+a{color:inherit}.grain{pointer-events:none;position:fixed;inset:0;opacity:.06;z-index:9;background:repeating-conic-gradient(#fff 0 25%,#000 0 50%) 0 0/3px 3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+.path{position:fixed;left:3vw;top:10vh;height:80vh;width:6px;background:var(--bg2);z-index:5;border-radius:3px}
+.pawn{position:absolute;left:-9px;top:0;width:24px;height:24px;border-radius:50%;background:var(--ac);box-shadow:0 0 20px var(--ac)}
+section{padding-left:10vw}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin-top:3rem}
+.card{transform-style:preserve-3d;min-height:200px;transition:.4s}.card:hover{transform:rotate(-2deg) translateY(-8px);border-color:var(--ac)}
+.pod{display:flex;gap:1rem;align-items:flex-end;margin-top:3rem}.pod div{flex:1;background:var(--ac);border-radius:10px 10px 0 0;display:flex;align-items:flex-start;justify-content:center;font-size:3rem;padding-top:1rem;transform-origin:bottom}
+svg.mills{width:min(70vw,420px);display:block;margin:2rem 0}svg.mills *{stroke:var(--ac);stroke-width:3;fill:none}
+</style></head><body><div class="grain"></div>
+<div class="path"><div class="pawn" id="pawn"></div></div>
+<nav><b>BG/02 BOARD</b><span>Roll · Tiles · Podium</span></nav>
+<section><p class="mono ac">PRESS SCROLL TO ROLL ▸</p><h1>Your <span class="ac">move</span>,<br>Bogdan</h1><p class="mono" style="margin-top:2rem;max-width:40ch">AI developer. Board-game nerd. Teaches agents to play Calico.</p></section>
+<section><h2 class="scr" data-t="Experience">Experience</h2><div class="grid">
+<div class="card tile"><p class="mono ac">TILE 1</p><h3>Planet Group</h3><p>AI Developer · GenAI for banking</p></div>
+<div class="card tile"><p class="mono ac">TILE 2</p><h3>Let's Cope</h3><p>React / React Native</p></div>
+<div class="card tile"><p class="mono ac">TILE 3</p><h3>ThinkUp NGO</h3><p>Next.js + Figma</p></div></div></section>
+<section><h2>Projects</h2><div class="grid" id="g"></div></section>
+<section><h2>Mills</h2><svg class="mills" viewBox="0 0 100 100"><rect class="d" x="5" y="5" width="90" height="90"/><rect class="d" x="25" y="25" width="50" height="50"/><rect class="d" x="40" y="40" width="20" height="20"/><path class="d" d="M50 5V40M50 60V95M5 50H40M60 50H95"/></svg></section>
+<section><h2>Awards</h2><p class="mono">100% podium rate</p><div class="pod" style="height:300px"><div id="p2" style="height:60%">2</div><div id="p1" style="height:100%">1</div><div id="p3" style="height:40%">3</div></div></section>
+<section><h2>Game <span class="ac">over?</span></h2><p class="mono">Play again → bogdan.gosa@gmail.com</p></section>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+gsap.to('#pawn',{top:'calc(100% - 24px)',ease:'none',scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:true}});
+const P=['Calico RL','Mills AI','EduLearn','Boardgame Reviews','Let\'s Cope','ThinkUp'];
+P.forEach((p,i)=>document.getElementById('g').insertAdjacentHTML('beforeend','<div class="card deal"><p class="mono ac">CARD '+(i+1)+'</p><h3>'+p+'</h3></div>'));
+gsap.from('.deal',{y:-200,x:-300,rotation:-25,opacity:0,stagger:.12,scrollTrigger:{trigger:'#g',start:'top 80%'}});
+gsap.from('.tile',{rotationY:90,opacity:0,stagger:.2,scrollTrigger:{trigger:'.tile',start:'top 85%'}});
+document.querySelectorAll('.d').forEach(e=>{const l=e.getTotalLength();e.style.strokeDasharray=l;e.style.strokeDashoffset=l});
+gsap.to('.d',{strokeDashoffset:0,stagger:.3,scrollTrigger:{trigger:'.mills',start:'top 80%',end:'bottom 40%',scrub:true}});
+gsap.from(['#p1','#p2','#p3'],{scaleY:0,stagger:.2,scrollTrigger:{trigger:'.pod',start:'top 85%'}});
+// dice-roll scramble
+const ch='ABCDEFGHIJKLMNOPQRSTUVWXYZ';document.querySelectorAll('h2').forEach(h=>{const t=h.textContent;ScrollTrigger.create({trigger:h,start:'top 85%',once:true,onEnter:()=>{let n=0;const iv=setInterval(()=>{h.textContent=t.split('').map((c,i)=>i<n?c:c===' '?' ':ch[Math.random()*26|0]).join('');if(++n>t.length){h.textContent=t;clearInterval(iv)}},50)}})});
+</script></body></html>
